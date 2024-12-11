@@ -10,7 +10,10 @@
 
 name: Build LEDE-N1
 
+permissions: write-all
+
 on:
+  repository_dispatch:
   workflow_dispatch:
     inputs:
       ssh:
