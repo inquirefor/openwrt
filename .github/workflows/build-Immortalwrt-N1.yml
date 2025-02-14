@@ -66,6 +66,7 @@ jobs:
         echo -e "\n\e[1;32mKernel:\e[0m"
         uname -a
         echo
+        chmod +x $FREE_DISK_SH && $FREE_DISK_SH
         
 
     - name: Build System Setup
