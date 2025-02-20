@@ -26,11 +26,9 @@ git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
 rm -rf package/luci-app-amlogic
 git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 
-git clone https://github.com/morytyann/OpenWrt-mihomo package/OpenWrt-mihomo
+git clone https://github.com/nikkinikki-org/OpenWrt-nikki.git package/luci-app-nikki
 
 rm -rf package/feeds/luci/luci-app-openclash/
 git_sparse_clone dev https://github.com/vernesong/OpenClash luci-app-openclash
-
-git_sparse_clone main https://github.com/nikkinikki-org/OpenWrt-nikki.git luci-app-nikki
 
 sed -i 's/192.168.1.1/10.10.10.6/g' package/base-files/files/bin/config_generate
