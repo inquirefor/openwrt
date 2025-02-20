@@ -31,4 +31,6 @@ git clone https://github.com/morytyann/OpenWrt-mihomo package/OpenWrt-mihomo
 rm -rf package/feeds/luci/luci-app-openclash/
 git_sparse_clone dev https://github.com/vernesong/OpenClash luci-app-openclash
 
+git_sparse_clone main https://github.com/nikkinikki-org/OpenWrt-nikki.git luci-app-nikki
+
 sed -i 's/192.168.1.1/10.10.10.6/g' package/base-files/files/bin/config_generate
