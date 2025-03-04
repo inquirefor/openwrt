@@ -18,6 +18,8 @@ function git_sparse_clone() {
   cd .. && rm -rf $repodir
 }
 
+git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
+
 rm -rf package/feeds/luci/luci-app-passwall/
 rm -rf feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box,chinadns-ng}
 git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/openwrt-passwall
