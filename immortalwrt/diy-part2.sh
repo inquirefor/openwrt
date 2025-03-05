@@ -18,8 +18,7 @@ function git_sparse_clone() {
   cd .. && rm -rf $repodir
 }
 rm -rf feeds/packages/lang/golang
-git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
-sed -i 's/go1.20.6/go1.22.6/g' feeds/packages/lang/golang/golang/Makefile
+git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
 
 rm -rf package/feeds/luci/luci-app-passwall/
 rm -rf feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box,chinadns-ng}
