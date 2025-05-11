@@ -27,9 +27,9 @@ git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-a
 git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 
 # 添加科学
-# sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-# sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
-git clone https://github.com/sbwml/openwrt_helloworld package/helloworld
+sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
+
 
 # git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
 
