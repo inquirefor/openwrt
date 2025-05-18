@@ -35,6 +35,7 @@ env:
   TZ: Asia/Shanghai
   DOCKER_BUILD_SH: build.sh
   CACHE_TOOLCHAIN: true
+  FREE_DISK_SH: immortalwrt/free_disk_space.sh
 
 jobs:
   build:
